@@ -1,0 +1,214 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del menú */
+nav {
+    background-color: #111;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Estilos para el contenido */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Hero Section */
+section.hero {
+    background-image: url(../img/portada.jpg); /* Aquí pones la imagen de las zapatillas */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 60px; /* Aumenté el tamaño de las letras a 60px */
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-text-stroke: 3px rgb(0, 0, 0); /* Aumento del borde a 5px */
+    text-stroke: 5px black; /* Compatibilidad con otros navegadores */
+}
+/* Características */
+section.caracteristicas {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.caracteristicas h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.caracteristicas-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caracteristica-item {
+    width: 22%;
+    margin: 10px 0;
+}
+
+.caracteristica-item h3 {
+    font-size: 22px;
+}
+
+.caracteristica-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Catálogo */
+.catalogo {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.catalogo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.catalogo-item {
+    width: 22%;
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.catalogo-item img {
+    width: 100%;
+    height: auto;
+}
+
+.catalogo-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.catalogo-item .price {
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Especiales */
+.especiales {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.especiales-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.especiales-item {
+    width: 45%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.especiales-item img {
+    width: 100%;
+    height: auto;
+}
+
+.especiales-item h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Redes Sociales */
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}

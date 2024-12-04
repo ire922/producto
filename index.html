@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zapatillas Jordan - Elige tu estilo, elige tu Jordan">
+    <meta name="keywords" content="Jordan, zapatillas, moda, deportivas, Nike">
+    <meta name="author" content="Tu Nombre">
+    <title>Zapatillas Jordan - Elige tu Estilo</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlace al archivo CSS -->
+    <style>
+        /* Estilo base para el menú de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Estilo para el menú desplegable */
+        nav .dropdown {
+            position: relative;
+        }
+
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        nav .dropdown-content a {
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Estilos para el menú en pantallas pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none; /* Oculta el menú principal en pantallas pequeñas */
+                flex-direction: column; /* Cambia a columna cuando se muestre */
+                width: 100%;
+            }
+
+            nav ul.active {
+                display: block; /* Muestra el menú cuando se activa */
+            }
+
+            nav .menu-toggle {
+                display: block; /* Muestra el botón de hamburguesa */
+                cursor: pointer;
+                font-size: 30px;
+                color: white;
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            nav .dropdown-content {
+                width: 100%; /* Hace que el dropdown ocupe todo el ancho */
+            }
+        }
+
+        /* Botón de hamburguesa */
+        .menu-toggle {
+            display: none; /* Inicialmente oculto */
+        }
+
+        /* Estilo base para el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cta-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-btn:hover {
+            background-color: #575757;
+        }
+
+        .form-container {
+            padding: 20px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer .footer-links {
+            margin: 10px 0;
+        }
+
+        footer .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span> <!-- Icono de hamburguesa -->
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li class="dropdown">
+                <a href="#especiales">Especiales</a>
+                <div class="dropdown-content">
+                    <a href="#especiales">Modelos Especiales</a>
+                    <a href="#comprar">Comprar</a>
+                </div>
+            </li>
+            <li><a href="#redes-sociales">Redes Sociales</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Jordan - Zapatillas Exclusivas</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="producto">
+        <h2></h2>
+    </section>
+    <section>
+        <h2>¡Lleva tu juego al siguiente nivel con las nuevas Zapatillas Jordan!</h2>
+    </section>
+
+    <!-- Características -->
+    <section class="caracteristicas" id="caracteristicas">
+        <h2>Características de las Zapatillas Jordan</h2>
+        <div class="caracteristicas-list">
+            <div class="caracteristica-item">
+                <h3>Diseño Icónico</h3>
+                <p>Las zapatillas Jordan combinan un diseño atemporal y moderno, inspiradas en la leyenda del baloncesto, Michael Jordan.</p>
+            </div>
+            <div class="caracteristica-item">
+                <h3>Comodidad Superior</h3>
+                <p>Con tecnología avanzada en la suela y materiales de alta calidad, ofrecen una comodidad excepcional.</p>
+            </div>
+            <div class="caracteristica-item">
+                <h3>Durabilidad</h3>
+                <p>Fabricadas con materiales resistentes, garantizan una larga vida útil.</p>
+            </div>
+            <div class="caracteristica-item">
+                <h3>Rendimiento Deportivo</h3>
+                <p>Diseñadas para el deporte, brindan estabilidad y soporte en cada movimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Modelos -->
+    <section class="catalogo" id="catalogo">
+        <h2 style="text-align:center; font-size: 36px;">Catálogo de Modelos</h2>
+        <div class="catalogo-container">
+            <div class="catalogo-item">
+                <img src="img/1 Retro.jpg" alt="Zapatillas Jordan 1 Retro">
+                <h3>Zapatillas Jordan 1 Retro</h3>
+                <div class="price">$149.99 USD</div>
+                <a href="#caracteristicas" class="cta-btn">Ver más</a>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/Jordan 4.jpg" alt="Zapatillas Jordan 4">
+                <h3>Zapatillas Jordan 4</h3>
+                <div class="price">$189.99 USD</div>
+                <a href="#caracteristicas" class="cta-btn">Ver más</a>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/Jordan 11.jpg" alt="Zapatillas Jordan 11">
+                <h3>Zapatillas Jordan 11</h3>
+                <div class="price">$210.00 USD</div>
+                <a href="#caracteristicas" class="cta-btn">Ver más</a>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/Jordan 5.jpg" alt="Zapatillas Jordan 5">
+                <h3>Zapatillas Jordan 5</h3>
+                <div class="price">$160.00 USD</div>
+                <a href="#caracteristicas" class="cta-btn">Ver más</a>
+            </div>
+            <div class="catalogo-item">
+                <img src="img/Jordan Air 13 Retro Del Sol.jpg" alt="Jordan Air 13 Retro Del Sol">
+                <h3>Jordan Air 13 Retro Del Sol</h3>
+                <div class="price">Bs 1,929.00 </div>
+                <a href="#caracteristicas" class="cta-btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprar Section -->
+    <section id="comprar" style="text-align: center; margin-top: 40px;">
+        <h2>¡Compra ahora y lleva tu estilo a otro nivel!</h2>
+        <a href="https://www.tienda-jordan.com" class="cta-btn">Comprar en línea</a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="form-container">
+        <h2>Contáctanos</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="message" rows="4" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="cta-btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section id="redes-sociales" style="text-align: center;">
+        <h2>Síguenos en nuestras redes sociales</h2>
+        <div>
+            <a href="#" class="cta-btn">Instagram</a>
+            <a href="#" class="cta-btn">Facebook</a>
+            <a href="#" class="cta-btn">Twitter</a>
+        </div>
+    </section>
+
+    <!-- Botón de volver arriba -->
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Inicio</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <p>&copy; 2024 Zapatillas Jordan. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Función para mostrar/ocultar el menú
+        function toggleMenu() {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('active'); // Activa y desactiva el menú
+        }
+
+        // Función para volver al inicio de la página
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
